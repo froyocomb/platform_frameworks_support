@@ -106,57 +106,57 @@ class MediaSessionCompatApi21 {
             mCallback = callback;
         }
 
-        @Override
+
         public void onCommand(String command, Bundle args, ResultReceiver cb) {
             mCallback.onCommand(command, args, cb);
         }
 
-        @Override
+
         public boolean onMediaButtonEvent(Intent mediaButtonIntent) {
             return mCallback.onMediaButtonEvent(mediaButtonIntent);
         }
 
-        @Override
+
         public void onPlay() {
             mCallback.onPlay();
         }
 
-        @Override
+
         public void onPause() {
             mCallback.onPause();
         }
 
-        @Override
+
         public void onSkipToNext() {
             mCallback.onSkipToNext();
         }
 
-        @Override
+
         public void onSkipToPrevious() {
             mCallback.onSkipToPrevious();
         }
 
-        @Override
+
         public void onFastForward() {
             mCallback.onFastForward();
         }
 
-        @Override
+
         public void onRewind() {
             mCallback.onRewind();
         }
 
-        @Override
+
         public void onStop() {
             mCallback.onStop();
         }
 
-        @Override
+
         public void onSeekTo(long pos) {
             mCallback.onSeekTo(pos);
         }
 
-        @Override
+
         public void onSetRating(Rating rating) {
             mCallback.onSetRating(rating);
         }
